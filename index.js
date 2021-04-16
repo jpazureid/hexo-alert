@@ -6,7 +6,7 @@ const regex = /(<blockquote>[\n|\s]*<p>\[!)(NOTE|IMPORTANT|WARNING|TIP)\]([^]*?)
 const alertConfig = {
   "NOTE": {
     className: "is-info",
-    ja: "注意",
+    ja: "Note", //original docs use "注意" as Note
   },
   "IMPORTANT": {
     className: "is-important",
