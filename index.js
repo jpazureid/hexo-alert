@@ -3,22 +3,27 @@
 const regex = /(<blockquote>[\n|\s]*<p>\[!)(NOTE|IMPORTANT|WARNING|TIP)\]([^]*?)<\/p>[\n|\s]*<\/blockquote>/gm;
 
 //transformation rules
+//see https://docs.microsoft.com/ja-jp/contribute/markdown-reference
 const alertConfig = {
   "NOTE": {
     className: "is-info",
     ja: "Note", //original docs use "注意" as Note
   },
+  "TIP": {
+    className: "is-success",
+    ja: "ヒント"
+  },
   "IMPORTANT": {
     className: "is-important",
     ja: "重要"
   },
+  "CAUTION": {
+    className: "is-caution",
+    ja: "注意事項"
+  },
   "WARNING": {
     className: "is-warning",
-    ja: "注意"
-  },
-  "TIP": {
-    className: "is-success",
-    ja: "ヒント"
+    ja: "警告"
   }
 }
 
