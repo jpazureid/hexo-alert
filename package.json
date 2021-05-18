@@ -1,6 +1,6 @@
 {
   "name": "hexo-alert",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "hexo plugin for generating alert block, MS docs flavor (ja)",
   "main": "index.js",
   "scripts": {
